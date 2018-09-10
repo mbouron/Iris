@@ -48,7 +48,7 @@ let state = {
     smooth_scrolling_enabled: true,
     hotkeys_enabled: true,
     playback_controls_touch_enabled: true,
-    allow_reporting: true,
+    allow_reporting: false,
     wide_scrollbar_enabled: false,
     window_focus: true,
     slim_mode: false,
