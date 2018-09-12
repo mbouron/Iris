@@ -396,6 +396,12 @@ class IrisCore(pykka.ThreadingActor):
                 "genius_authorization_url": self.config["iris"][
                     "genius_authorization_url"
                 ],
+                "http_streaming_enabled": self.config["iris"][
+                    "http_streaming_enabled"
+                ],
+                "http_streaming_url": self.config["iris"][
+                    "http_streaming_url"
+                ],
             }
         }
 

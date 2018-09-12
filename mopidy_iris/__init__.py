@@ -31,6 +31,8 @@ class Extension(ext.Extension):
         schema["lastfm_authorization_url"] = config.String()
         schema["genius_authorization_url"] = config.String()
         schema["data_dir"] = config.String()
+        schema["http_streaming_enabled"] = config.Boolean()
+        schema["http_streaming_url"] = config.String()
         return schema
 
     def setup(self, registry):

@@ -781,6 +781,17 @@ const PusherMiddleware = (function () {
           authorization_url: (action.config.genius_authorization_url ? action.config.genius_authorization_url : null),
         }));
 
+        var core_updates = {};
+
+        if (action.config.http_streaming_enabled) {
+            core_updates.http_streaming_enabled = action.config.http_streaming_enabled;
+        }
+
+        if (action.config.http_streaming_url) {
+            core_updates.http_streaming_url = action.config.http_streaming_url;
+        }
+        store.dispatch(coreActions.set(core_updates));
+
         next(action);
         break;
 
